@@ -1,0 +1,88 @@
+/* RESET BODY */
+
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 1000px;
+}
+
+.piko-container {
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 1000px;
+}
+
+.together-container {
+    margin: 0 auto;
+    padding: 10em 1em;
+    padding-top: 10em;
+    max-width: 1000px;
+}
+
+#pikoinfo {
+    margin: 0 auto;
+    padding: 4em 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(16, 16, 16, 1);
+    color: white;
+    align-content: center;
+    overflow-x: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    h1,
+    h2 {
+        color: rgba(225, 225, 225, 1);
+        margin: 0;
+    }
+
+    h4 {
+        color: rgba(0, 0, 0, 1);
+        margin: 0;
+    }
+
+
+    p {
+        color: rgba(0, 0, 0, 1);
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .grid-container {
+        margin: 8em auto;
+        max-width: 1000px;
+    }
+
+}
+
+/* MEDIA QUERIES */
+/* RESPONSIVE TYPOGRAPHY */
+
+// SMALL
+
+body {
+    font-size: 87.5%;
+}
+
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    body {
+        font-size: 112.5%;
+    }
+}

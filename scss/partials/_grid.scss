@@ -1,0 +1,234 @@
+/* SYMANTIC GRID */
+
+$gridgap: 2%;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($gridgap / 2);
+    margin-right: -($gridgap / 2);
+    align-items: center;
+
+    >* {
+        margin: ($gridgap / 2);
+        flex-grow: 1;
+    }
+
+    &.centered {
+        justify-content: center;
+    }
+
+    &.swap {
+        flex-direction: row-reverse;
+    }
+
+    &.stack {
+        flex-direction: column;
+    }
+
+    &.align-top {
+        align-items: flex-start;
+    }
+
+    @media (min-width: $breakpoint-small) {
+
+        >* {
+            flex-grow: 0;
+        }
+
+        .one-whole {
+            width: 100% - $gridgap;
+        }
+
+        .one-half {
+            width: 50% - $gridgap;
+        }
+
+        .one-third {
+            width: 33.3333% - $gridgap;
+        }
+
+        .two-thirds {
+            width: 66.6666% - $gridgap;
+        }
+
+        .one-fourth {
+            width: 25% - $gridgap;
+        }
+
+        .three-fourth {
+            width: 75% - $gridgap;
+        }
+
+        .push-one-fourth {
+            margin-left: 25% + ($gridgap / 2);
+        }
+
+        .push-one-third {
+            margin-left: 33.333% + ($gridgap / 2);
+        }
+
+        .push-one-half {
+            margin-left: 50% + ($gridgap / 2);
+        }
+
+        /* GRID HELPERS */
+
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+}
+
+/* CUSTOM PIKO INFO GRID */
+
+#pikoinfo {
+
+    img {
+        display: block;
+    }
+
+    .item {
+        padding: 1.5em;
+        font-size: 1rem;
+        border: 5px solid rgba(255, 255, 255, 1);
+        margin: 0 0 1.5em 0;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 2em 0 2em 0;
+        z-index: 1;
+    }
+
+    .item1 {
+        grid-column: 3 / span 2;
+    }
+
+    .item2 {
+        grid-column: 1 / span 1;
+    }
+
+    .item3 {
+        grid-column: 1 / span 2;
+    }
+
+    .item4 {
+        grid-column: 2 / span 2;
+    }
+
+    .item5 {
+        grid-column: 3 / span 2;
+    }
+
+    .item6 {
+        grid-column: 1 / span 2;
+    }
+
+    .item7 {
+        grid-column: 3 / span 2;
+    }
+}
+
+@media (min-width: $breakpoint-small) {
+
+    #piko-info {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50%;
+        padding: 3em;
+
+        .info-image {
+            position: absolute;
+            top: -175px;
+            right: 50px;
+            background-color: transparent;
+        }
+    }
+
+    #piko-info2 {
+        margin-top: 6em;
+        justify-content: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 50%;
+        padding: 3em;
+
+        .info-image {
+            position: absolute;
+            background-color: transparent;
+            top: -125px;
+            left: 250px;
+        }
+
+    }
+
+    #piko-info3a {
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 8em;
+        padding: 3em;
+
+        .info-image-left {
+            position: absolute;
+            background-color: transparent;
+            top: -175px;
+            left: 70px;
+        }
+
+    }
+
+    #piko-info3b {
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 8em;
+        padding: 3em;
+
+        .info-image-middle {
+            position: absolute;
+            background-color: transparent;
+            top: -175px;
+            left: 325px;
+        }
+
+    }
+
+    #piko-info3c {
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 8em;
+        padding: 3em;
+
+        .info-image-right {
+            position: absolute;
+            background-color: transparent;
+            top: -150px;
+            left: 500px;
+        }
+
+    }
+
+    #piko-info4 {
+        margin-top: 3em;
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 3em;
+
+        .info-image {
+            position: absolute;
+            background-color: transparent;
+            top: -175px;
+            left: 50px;
+        }
+
+    }
+
+    .item7 {
+        padding-left: 3em;
+        grid-column: 3 / span 2;
+    }
+}

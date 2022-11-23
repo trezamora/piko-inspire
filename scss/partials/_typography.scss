@@ -1,0 +1,111 @@
+/* BASE COLORS */
+body {
+    color: $color-text-body;
+}
+
+h1,
+h2,
+h3 {
+    color: $color-text-headings;
+}
+
+/* BASE TEXT FONTS */
+
+body {
+    font-family: $font-family-sans;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-family-serif;
+}
+
+/* BASE TYPOGRAPHY */
+
+body {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    margin: 0 0 .5em 0;
+}
+
+/* SECTION HEADING */
+
+.section-heading {
+    font-size: 1rem;
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: 0 0 .5em 0;
+    margin: 3em auto 3em auto;
+}
+
+/* TYPOGRAPHIC SCALE */
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+/* LIMIT # OF CHARACTERS PER LINE */
+
+p {
+    max-width: 40em;
+}
+
+/* LINKS */
+
+a {
+    color: $color-link;
+
+    &:hover {
+        color: $color-link-darker;
+    }
+}
+
+/* HORIZONTAL LINE */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 3em 0;
+}
+
+/* TYPE SPECIMEN */
+
+.headline {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    color: $color-accent;
+}
+
+.subheadline {
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: .25em 0;
+    color: $color-light-accent;
+}

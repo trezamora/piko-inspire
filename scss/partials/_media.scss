@@ -1,0 +1,42 @@
+/* MEDIA */
+
+/* RESPONSIVE IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.swiper {
+    padding: 5em 4em;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+
+}
+
+.stories-person {
+    padding: 3em 3em;
+    position: relative;
+    border: 3px solid rgba(247, 198, 100, 1);
+    border-radius: 1em;
+    color: white;
+
+    h3 {
+        color: white;
+    }
+}
+
+.stories-number {
+    position: absolute;
+    font-size: 10rem;
+    opacity: .15;
+    color: white;
+}

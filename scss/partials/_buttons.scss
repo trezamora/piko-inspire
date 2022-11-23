@@ -1,0 +1,155 @@
+/* BUTTONS */
+
+button {
+    padding: 1em;
+    margin: 1em .5em 1em 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+    border: 2px solid $color-text-body;
+    border-radius: .5em;
+    padding: 1em;
+    margin: 1em .5em 1em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(0, 0, 0, 1);
+        border: 2px solid $color-link-darker;
+        transition: ease-in 250ms;
+    }
+}
+
+/* CUSTOM CONTACT BUTTON */
+
+.form-button {
+    position: relative;
+    background: none;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15em auto;
+    padding: 1.5em 2em;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    display: block;
+
+    &:hover {
+        background: #f7c664;
+        color: #fff;
+        border: #f7c664 solid 2px;
+    }
+}
+
+#storyform {
+    position: absolute;
+    text-align: right;
+    background: #fff;
+    width: 1000px;
+    height: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: .5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+}
+
+.story-form {
+    z-index: 5;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        text-transform: uppercase;
+        color: #F7C664;
+        font-size: 2rem;
+        margin-bottom: 2em;
+    }
+
+    ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    input {
+        font-family: $font-family-sans;
+        border: 0;
+        margin: 2em 0;
+        padding: 1em 0;
+        width: 350px;
+        display: block;
+        background: none;
+        border-bottom: 2px solid #F7C664;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        font-family: $font-family-sans;
+        border: 0;
+        margin: 2em 0;
+        padding: 1em 0;
+        width: 350px;
+        height: 100px;
+        display: block;
+        background: none;
+        border-bottom: 2px solid #F7C664;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #submit {
+        border: 2px solid #F7C664;
+        padding: 1em 2em;
+    }
+
+    #submit:hover {
+        color: #F7C664;
+    }
+}
+
+.js #storyform {
+    display: none;
+}
+
+.close {
+    text-align: right;
+    position: relative;
+    top: -10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #f9544e;
+}
+
+@media (max-width: $breakpoint-small) {
+
+    #storyform {
+        width: 480px;
+    }
+
+    textarea {
+        width: 250px;
+    }
+
+    input {
+        width: 250px;
+    }
+}

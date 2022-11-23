@@ -1,0 +1,37 @@
+/* GLOBAL RESETS */
+* {
+    box-sizing: border-box;
+}
+
+// VARIABLES
+$color-background: transparent;
+$color-text-body: rgba(0, 0, 0, .8);
+$color-text-headings: rgba(0, 0, 0, 1);
+$color-text-footer: rgba(225, 225, 225, .8);
+$color-accent: rgb(226, 239, 124);
+$color-link: rgba(0, 0, 0, .8);
+$color-link-darker: rgba(240, 190, 90, 0.8);
+$color-light-accent: rgba(122, 203, 157, 1);
+$color-dark-accent: rgba(90, 132, 108, 1);
+
+
+$font-family-sans: 'itc-avant-garde-gothic-pro', sans-serif;
+$font-family-serif: 'mrs-eaves-xl-serif', serif;
+
+// BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+// IMPORTS
+@import "partials/toc";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/media";
+@import "partials/layout";
+@import "partials/grid";
+@import "partials/structure";
+@import "partials/helpers";
+@import "partials/sitenav";
+@import "partials/animations";
+@import "partials/lottie";

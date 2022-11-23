@@ -1,0 +1,254 @@
+/* SITE STRUCTURE */
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: rgba(0, 0, 0, .8);
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.site-id {
+    display: flex;
+    align-items: center;
+}
+
+/* HERO SECTION */
+
+.hero {
+    color: rgba(225, 225, 225, .8);
+
+    h3 {
+        margin: 0 auto;
+        color: rgba(225, 225, 225, .8);
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.left-box {
+    position: relative;
+    width: 450px;
+    background-color: $color-dark-accent;
+    padding: 4em;
+    top: 75px;
+}
+
+
+body {
+    background: linear-gradient(rgb(175, 175, 175) 33.3%, rgba(215, 215, 215, 1) 66.3%);
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* SECTION */
+
+section {
+    background: $color-background;
+    padding: 8em 0;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+#pikoabout {
+    background-image: url('../img/pikotriangles-07.svg'), url('../img/pikotriangles-11c.svg');
+    background-position: left top, bottom right;
+    background-repeat: no-repeat;
+}
+
+// #pikoinfo {
+//     background-image: url('../img/pikotriangles-10.svg'), url('../img/pikotriangles-13.svg');
+//     background-position: left top, bottom right;
+//     background-repeat: no-repeat;
+// }
+
+#pikoconnect {
+    background-image: url('../img/pikotriangles-14.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+#pikojoin {
+    background-image: url('../img/pikotriangles-12.svg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.swiper-container {
+    background-image: url('../img/pikotriangles-11a.svg'), url('../img/pikotriangles-11b.svg');
+    background-position: left top, bottom right;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+@media (min-width: $breakpoint-small) {
+
+    .connect-container {
+        padding-top: 2em;
+        position: relative;
+    }
+
+    .connect-img {
+        position: absolute;
+        top: -145px;
+    }
+}
+
+.connect-text {
+    position: absolute;
+    background-color: white;
+    padding: 1.5em;
+    font-size: 1rem;
+    border: 5px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2em 0 2em 0;
+}
+
+/* SITE FOOTER */
+
+.site-footer {
+    background: rgba(0, 0, 0, .8);
+    min-height: 400px;
+    padding: 2em;
+
+    a {
+        color: $color-text-footer;
+        text-decoration: none;
+    }
+
+    .footer-nav {
+        padding-top: 0;
+
+        ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            padding: 0 1em;
+            line-height: 1;
+            color: rgba(225, 225, 225, 1);
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0 0 0;
+        margin: 1em;
+        color: rgba(225, 225, 225, 1);
+
+        h3 {
+            color: rgba(225, 225, 225, 1);
+        }
+
+        p {
+            line-height: 1.4;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-small) {
+    .footer-content {
+        display: flex;
+        padding: 1em;
+
+        .subscribe {
+            margin: 1em;
+
+            .inspire-box {
+                margin-top: 1em;
+                display: flex;
+                background-color: white;
+
+                .send {
+                    padding: 1.25em;
+                    color: rgba(0, 0, 0, .8);
+                    background-color: $color-link-darker;
+                }
+
+                .enter {
+                    color: rgba(0, 0, 0, .8);
+                    padding: 1.25em;
+                    text-align: left;
+                }
+            }
+        }
+
+        .motivate {
+            margin: 1em;
+
+            .motivate-box {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.inspire-box {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    background-color: white;
+
+    .send {
+        padding: 1.25em;
+        color: rgba(0, 0, 0, .8);
+        background-color: $color-link-darker;
+    }
+
+    .enter {
+        color: rgba(0, 0, 0, .8);
+        padding: 1.25em;
+        text-align: left;
+    }
+}
