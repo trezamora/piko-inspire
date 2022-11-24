@@ -79,31 +79,6 @@ var animation = bodymovin.loadAnimation({
     path: 'js/joinanimation.json'
 });
 
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('swirl-yellow'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'js/swirlyellow.json'
-// });
-
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('swirl-yellow2'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'js/swirlyellow.json'
-// });
-
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('swirl-yellow3'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'js/swirlyellow.json'
-// });
-
-
 //FORM BUTTON JS
 //Code By Webdevtrick(https://webdevtrick.com )
 

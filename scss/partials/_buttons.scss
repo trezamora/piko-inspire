@@ -1,51 +1,62 @@
 /* BUTTONS */
 
-button {
-    padding: 1em;
-    margin: 1em .5em 1em 0;
-}
-
 .button {
-    display: inline-block;
-    background-color: transparent;
-    color: rgba(0, 0, 0, 1);
+    display: inline-flex;
+    padding: 1em 1em;
     border: 2px solid $color-text-body;
-    border-radius: .5em;
-    padding: 1em;
+    border-radius: 1em 0 1em 0;
     margin: 1em .5em 1em 0;
+    color: $color-text-body;
+    text-transform: uppercase;
     text-decoration: none;
-    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
-    &:hover {
+    a {
         color: rgba(0, 0, 0, 1);
-        border: 2px solid $color-link-darker;
-        transition: ease-in 250ms;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 }
 
-/* CUSTOM CONTACT BUTTON */
-
-.form-button {
+.button-style {
     position: relative;
-    background: none;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 15em auto;
-    padding: 1.5em 2em;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
+    overflow: hidden;
     cursor: pointer;
-    transition: ease all 0.3s;
-    display: block;
+
+    a {
+        position: relative;
+        transition: all 250ms ease-Out;
+    }
 
     &:hover {
-        background: #f7c664;
-        color: #fff;
-        border: #f7c664 solid 2px;
+        left: 0;
+        border: 2px solid $color-link-darker;
+
+
+        a {
+            color: $color-text-body;
+        }
+    }
+
+    .button-animation {
+        transform: rotate(50deg);
+        width: 110%;
+        height: 250%;
+        left: -225px;
+        top: -30px;
+        background: $color-link-darker;
+        position: absolute;
+        transition: all 250ms ease-Out;
+    }
+
+    &:hover .button-animation {
+        left: 0;
     }
 }
+
+/* CUSTOM CONTACT FORM BUTTON */
 
 #storyform {
     position: absolute;
@@ -56,7 +67,9 @@ button {
     max-width: 100%;
     margin: 0 auto;
     border-radius: .5em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    border: 1px solid red;
 }
 
 .story-form {
@@ -64,6 +77,16 @@ button {
 
     h1 {
         text-align: center;
+    }
+
+    .close {
+        text-align: right;
+        position: relative;
+        top: -10px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 3rem;
+        color: #f9544e;
     }
 }
 
@@ -118,26 +141,19 @@ form {
     #submit {
         border: 2px solid #F7C664;
         padding: 1em 2em;
-    }
 
-    #submit:hover {
-        color: #F7C664;
+        &:hover {
+            color: #F7C664;
+        }
     }
 }
 
 .js #storyform {
     display: none;
+    overflow: hidden;
 }
 
-.close {
-    text-align: right;
-    position: relative;
-    top: -10px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 3rem;
-    color: #f9544e;
-}
+
 
 @media (max-width: $breakpoint-small) {
 

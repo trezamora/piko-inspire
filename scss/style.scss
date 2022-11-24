@@ -8,9 +8,9 @@ $color-background: transparent;
 $color-text-body: rgba(0, 0, 0, .8);
 $color-text-headings: rgba(0, 0, 0, 1);
 $color-text-footer: rgba(225, 225, 225, .8);
-$color-accent: rgb(226, 239, 124);
+$color-accent: rgba(226, 239, 124, 1);
 $color-link: rgba(0, 0, 0, .8);
-$color-link-darker: rgba(240, 190, 90, 0.8);
+$color-link-darker: rgba(240, 190, 90, 1);
 $color-light-accent: rgba(122, 203, 157, 1);
 $color-dark-accent: rgba(90, 132, 108, 1);
 
@@ -35,3 +35,4 @@ $breakpoint-large: 1250px;
 @import "partials/sitenav";
 @import "partials/animations";
 @import "partials/lottie";
+@import "partials/sitefooter";

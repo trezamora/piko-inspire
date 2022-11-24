@@ -1,0 +1,110 @@
+/* SITE FOOTER */
+
+/* SITE FOOTER */
+
+.site-footer {
+    background: rgba(0, 0, 0, .8);
+    min-height: 400px;
+    padding: 2em;
+
+    a {
+        color: $color-text-footer;
+        text-decoration: none;
+    }
+
+    .footer-nav {
+        padding-top: 0;
+
+        ul {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            padding: 0 1em;
+            line-height: 1;
+            color: rgba(225, 225, 225, 1);
+        }
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0 0 0;
+        margin: 1em;
+        color: rgba(225, 225, 225, 1);
+
+        h3 {
+            color: rgba(225, 225, 225, 1);
+        }
+
+        p {
+            line-height: 1.4;
+        }
+    }
+}
+
+// SUBSCRIBE MOTIVATE FOOTER
+
+@media (min-width: $breakpoint-small) {
+    .footer-content {
+        display: flex;
+        padding: 1em;
+
+        .subscribe {
+            margin: 1em;
+
+            .inspire-box {
+                margin-top: 1em;
+                display: flex;
+                background-color: white;
+
+                .send {
+                    padding: 1.25em;
+                    color: rgba(0, 0, 0, .8);
+                    background-color: $color-link-darker;
+                }
+
+                .enter {
+                    color: rgba(0, 0, 0, .8);
+                    padding: 1.25em;
+                    text-align: left;
+                }
+            }
+        }
+
+        .motivate {
+            margin: 1em;
+
+            .motivate-box {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.inspire-box {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    background-color: white;
+
+    .send {
+        padding: 1.25em;
+        color: rgba(0, 0, 0, .8);
+        background-color: $color-link-darker;
+    }
+
+    .enter {
+        color: rgba(0, 0, 0, .8);
+        padding: 1.25em;
+        text-align: left;
+    }
+}

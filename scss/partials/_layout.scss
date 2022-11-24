@@ -18,52 +18,31 @@ body {
     max-width: 1000px;
 }
 
-.together-container {
-    margin: 0 auto;
-    padding: 10em 1em;
-    padding-top: 10em;
-    max-width: 1000px;
+.swiper-container {
+    background-image: url('../img/pikotriangles-11a.svg'), url('../img/pikotriangles-11b.svg');
+    background-position: left top, bottom right;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .8);
 }
 
-#pikoinfo {
-    margin: 0 auto;
-    padding: 4em 1em;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: rgba(16, 16, 16, 1);
-    color: white;
-    align-content: center;
-    overflow-x: hidden;
+.together-wrapper {
+    text-align: center;
 
-    img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 0;
+    @media (min-width: $breakpoint-small) {
+
+        .creator-images {
+            display: flex;
+            justify-content: space-between;
+
+            .creator {
+                margin: 1em;
+
+                h1 {
+                    color: rgba(225, 225, 225, 1);
+                }
+            }
+        }
     }
-
-    h1,
-    h2 {
-        color: rgba(225, 225, 225, 1);
-        margin: 0;
-    }
-
-    h4 {
-        color: rgba(0, 0, 0, 1);
-        margin: 0;
-    }
-
-
-    p {
-        color: rgba(0, 0, 0, 1);
-        margin: 0;
-        line-height: 1.4;
-    }
-
-    .grid-container {
-        margin: 8em auto;
-        max-width: 1000px;
-    }
-
 }
 
 /* MEDIA QUERIES */
