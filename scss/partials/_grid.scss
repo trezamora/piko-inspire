@@ -126,6 +126,7 @@ $gridgap: 2%;
     }
 
     .item7 {
+        padding: 2em 0;
         grid-column: 3 / span 2;
     }
 }
@@ -228,11 +229,14 @@ $gridgap: 2%;
     }
 
     .item7 {
-        padding-left: 3em;
         grid-column: 3 / span 2;
+        position: absolute;
+        top: -150px;
+        left: 25px;
     }
 
     .item8 {
-        padding: 8em 0;
+        padding-top: 2em;
+        padding-bottom: 9em;
     }
 }
