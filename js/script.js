@@ -1,5 +1,4 @@
 // OVERLAY NAV MENU DRAWER
-
 const mymenubutton = document.querySelector('.menu-button');
 const mysitenav = document.querySelector('.site-header .site-nav');
 
@@ -10,6 +9,15 @@ mymenubutton.onclick = function () {
         mysitenav.setAttribute('data-navstate', 'open');
     }
 }
+
+// CLOSE OVERLAY NAV DRAWER ON CLICK
+const mysitenavlinks = document.querySelectorAll('.site-header .site-nav a');
+
+for (let i = 0; i < mysitenavlinks.length; i++) {
+    mysitenavlinks[i].onclick = function () {
+        mysitenav.setAttribute('data-navstate', 'closed');
+    };
+};
 
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
 const io_options = {
@@ -83,13 +91,13 @@ var animation = bodymovin.loadAnimation({
 //Code By Webdevtrick(https://webdevtrick.com )
 
 (function () {
-    $('html').addClass('js');
+    // $('body').addClass('hideform');
 
     var contactForm = {
         container: $('#storyform'),
         config: {
             effect: 'slideToggle',
-            speed: 200
+            speed: 500
         },
 
         init: function (config) {
@@ -98,12 +106,12 @@ var animation = bodymovin.loadAnimation({
             $('#formbutton').on('click', this.show);
         },
 
-        show: function () {
+        show: function (e) {
             var cf = contactForm,
                 container = cf.container,
                 config = cf.config;
 
-
+            e.preventDefault();
             if (container.is(':hidden')) {
                 cf.close.call(container);
                 container[config.effect]
@@ -126,6 +134,6 @@ var animation = bodymovin.loadAnimation({
 
     contactForm.init({
         effect: 'fadeToggle',
-        speed: 200
+        speed: 500
     });
 })();

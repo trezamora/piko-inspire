@@ -21,11 +21,6 @@
     <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!-- FORM POP UP -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-
     <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -293,32 +288,28 @@
                             you and hear your&nbsp;story.</p>
                         <div class="button button-style">
                             <div class="button-animation"></div>
-                            <a href="#storyform" id="formbutton">Submit your story</a>
+                            <a href="#pikojoin" id="formbutton">Submit your story</a>
                         </div>
                     </div>
-                    <div class="story-form" id="storyform">
-                        <form action="#">
-                            <ul>
-                                <h1>Share your Story</h1>
-                                <li>
-                                    <input type="text" name="name" id="name" placeholder="Full name">
-                                    <input type="email" name="email" id="email" placeholder="Email">
-                                </li>
-                                <li>
-                                    <textarea name="message" id="message" placeholder="Your message"></textarea>
-                                </li>
-                                <li>
-                                    <input type="submit" value="Send message" class="button" id="submit">
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="story-form" id="storyform">
+                    <form action="#">
+                        <ul>
+                            <h1>Share your Story</h1>
+                            <li>
+                                <input type="text" name="name" id="name" placeholder="Full name">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </li>
+                            <li>
+                                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send message" class="button" id="submit">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
 
-        <section id="pikotogether" class="animate-on-scroll">
-            <div class="container">
                 <div class="row">
                     <div class="one-whole animate-slide-up">
                         <div class="together-wrapper">
@@ -409,6 +400,12 @@
             speedAsDuration: true
         });
     </script>
+
+    <!-- JS SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- FORM POP UP -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
     <!-- LOTTIE -->
     <script src="js/lottie.js"></script>

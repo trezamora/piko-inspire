@@ -143,11 +143,20 @@ section {
 
 }
 
-
 #pikoconnect {
     background-image: url('../img/pikotriangles-14.svg');
     background-position: right top;
     background-repeat: no-repeat;
+}
+
+#pikojoin {
+    background-image: url('../img/pikotriangles-12.svg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    .container {
+        position: relative;
+    }
 }
 
 #pikotogether {

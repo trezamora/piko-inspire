@@ -62,14 +62,14 @@
     position: absolute;
     text-align: right;
     background: #fff;
+    top: 0;
+    left: 0;
     width: 1000px;
     height: 600px;
     max-width: 100%;
     margin: 0 auto;
     border-radius: .5em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
-    overflow: hidden;
-    border: 1px solid red;
 }
 
 .story-form {
@@ -148,12 +148,13 @@ form {
     }
 }
 
-.js #storyform {
+#storyform {
     display: none;
-    overflow: hidden;
 }
 
-
+// .hideform #storyform {
+//     display: none;
+// }
 
 @media (max-width: $breakpoint-small) {
 

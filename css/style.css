@@ -195,6 +195,8 @@ hr {
   position: absolute;
   text-align: right;
   background: #fff;
+  top: 0;
+  left: 0;
   width: 1000px;
   height: 600px;
   max-width: 100%;
@@ -202,8 +204,6 @@ hr {
   border-radius: 0.5em;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  border: 1px solid red;
 }
 
 .story-form {
@@ -276,9 +276,8 @@ form #submit:hover {
   color: #F7C664;
 }
 
-.js #storyform {
+#storyform {
   display: none;
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -363,7 +362,9 @@ body {
 }
 
 .together-wrapper {
+  padding-top: 10em;
   text-align: center;
+  padding-bottom: 20em;
 }
 @media (min-width: 768px) {
   .together-wrapper .creator-images {
@@ -787,6 +788,15 @@ section {
   background-image: url("../img/pikotriangles-14.svg");
   background-position: right top;
   background-repeat: no-repeat;
+}
+
+#pikojoin {
+  background-image: url("../img/pikotriangles-12.svg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+#pikojoin .container {
+  position: relative;
 }
 
 #pikotogether {

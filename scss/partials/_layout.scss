@@ -26,7 +26,9 @@ body {
 }
 
 .together-wrapper {
+    padding-top: 10em;
     text-align: center;
+    padding-bottom: 20em;
 
     @media (min-width: $breakpoint-small) {
 
