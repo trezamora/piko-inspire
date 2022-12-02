@@ -63,6 +63,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 // LOTTIE READER
+// SECTIONS
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('about-animation'),
     render: 'svg',
@@ -85,6 +86,56 @@ var animation = bodymovin.loadAnimation({
     loop: true,
     autoplay: true,
     path: 'js/joinanimation.json'
+});
+
+//CUSTOM GRID
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikomission'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikomission.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikovision'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikovision.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikocommunity'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikocommunity.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikofoster'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikofoster.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikocreate'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikocreate.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('pikoaction'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/pikoaction.json'
 });
 
 //FORM BUTTON JS
