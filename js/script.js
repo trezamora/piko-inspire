@@ -65,6 +65,14 @@ const swiper = new Swiper('.swiper', {
 // LOTTIE READER
 // SECTIONS
 var animation = bodymovin.loadAnimation({
+    container: document.getElementById('hero-animation'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/heroanimation.json'
+});
+
+var animation = bodymovin.loadAnimation({
     container: document.getElementById('about-animation'),
     render: 'svg',
     loop: true,

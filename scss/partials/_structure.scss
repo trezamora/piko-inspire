@@ -32,6 +32,7 @@
 /* HERO SECTION */
 
 .hero {
+    background-color: rgba(0, 0, 0, .3);
     color: rgba(225, 225, 225, .8);
 
     h3 {
@@ -59,14 +60,6 @@
 .hero-container {
     position: relative;
     z-index: 2;
-}
-
-.left-box {
-    position: relative;
-    width: 450px;
-    background-color: $color-dark-accent;
-    padding: 4em;
-    top: 75px;
 }
 
 /* BACKGROUND */

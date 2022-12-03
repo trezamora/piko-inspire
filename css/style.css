@@ -688,6 +688,7 @@ body {
 
 /* HERO SECTION */
 .hero {
+  background-color: rgba(0, 0, 0, 0.3);
   color: rgba(225, 225, 225, 0.8);
 }
 .hero h3 {
@@ -715,14 +716,6 @@ body {
 .hero-container {
   position: relative;
   z-index: 2;
-}
-
-.left-box {
-  position: relative;
-  width: 450px;
-  background-color: rgb(90, 132, 108);
-  padding: 4em;
-  top: 75px;
 }
 
 /* BACKGROUND */
