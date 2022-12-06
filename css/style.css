@@ -696,6 +696,14 @@ body {
   color: rgba(225, 225, 225, 0.8);
 }
 
+.hero-animation {
+  background: pink;
+  max-height: 80vh;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: -10vh;
+}
+
 .bg-video {
   position: absolute;
   top: 0;
