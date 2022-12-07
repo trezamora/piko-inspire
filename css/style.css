@@ -697,7 +697,6 @@ body {
 }
 
 .hero-animation {
-  background: pink;
   max-height: 80vh;
   max-width: 80vw;
   margin: 0 auto;
@@ -1303,9 +1302,6 @@ marquee p {
   color: rgb(225, 225, 225);
 }
 .site-footer .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1334,20 +1330,19 @@ marquee p {
     margin: 1em;
   }
   .footer-content .subscribe .inspire-box {
+    font-size: 0.8em;
+    height: 50px;
     margin-top: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background-color: white;
   }
   .footer-content .subscribe .inspire-box .send {
-    padding: 1.25em;
+    padding: 0.9em 1.3em 1.25em 0.75em;
     color: rgba(0, 0, 0, 0.8);
     background-color: rgb(240, 190, 90);
   }
   .footer-content .subscribe .inspire-box .enter {
     color: rgba(0, 0, 0, 0.8);
-    padding: 1.25em;
+    padding: 0.9em 1.3em 1.25em 0.75em;
     text-align: left;
   }
   .footer-content .motivate {
@@ -1359,9 +1354,10 @@ marquee p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  }
+  .footer-content .motivate .social-icons {
+    padding: 0 2em;
+    padding-left: 0;
   }
 }
 .inspire-box {
