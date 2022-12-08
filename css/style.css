@@ -298,45 +298,6 @@ img {
   height: auto;
 }
 
-.swiper-container {
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-.swiper {
-  --swiper-theme-color: #f0be5a;
-  padding: 5em 4em;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.stories-person {
-  padding: 3em 3em;
-  position: relative;
-  border: 3px solid rgb(247, 198, 100);
-  border-radius: 1em;
-  color: white;
-}
-.stories-person h3 {
-  padding-top: 1em;
-  color: white;
-}
-
-.stories-number {
-  position: absolute;
-  font-size: 10rem;
-  opacity: 0.15;
-  color: white;
-  left: 200px;
-}
-
 /* RESET BODY */
 body {
   margin: 0;
@@ -356,10 +317,62 @@ body {
 }
 
 .swiper-container {
+  margin: 0 auto;
+  padding: 0 1em;
   background-image: url("../img/pikotriangles-11a.svg"), url("../img/pikotriangles-11b.svg");
   background-position: left top, bottom right;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-container .swiper {
+  --swiper-theme-color: #f0be5a;
+  padding: 5em 4em;
+}
+@media (min-width: 768px) {
+  .swiper-container .swiper {
+    margin: 2em;
+  }
+}
+@media (min-width: 1050px) {
+  .swiper-container .swiper {
+    margin: 5em;
+  }
+}
+@media (min-width: 1250px) {
+  .swiper-container .swiper {
+    margin: 8em;
+  }
+}
+.swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.swiper-container .stories-person {
+  padding: 3em 3em;
+  position: relative;
+  border: 3px solid rgb(247, 198, 100);
+  border-radius: 1em;
+  color: white;
+}
+.swiper-container .stories-person h3 {
+  padding-top: 1em;
+  color: white;
+}
+.swiper-container .stories-person .stories-number {
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0.15;
+  color: white;
+  left: 200px;
+}
+@media (min-width: 768px) {
+  .swiper-container .stories-person .stories-number {
+    left: 250px;
+  }
 }
 
 .together-wrapper {
@@ -380,7 +393,7 @@ body {
     margin: 1em;
   }
   .together-wrapper .creator-images .creator h1 {
-    color: rgb(225, 225, 225);
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -412,6 +425,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: hidden;
 }
 .row > * {
   margin: 1%;
@@ -831,7 +845,7 @@ section {
 }
 .site-header .site-nav .menu-button {
   position: absolute;
-  top: 0.5em;
+  top: 1em;
   right: 0.5em;
   color: rgba(0, 0, 0, 0.8);
   margin: 0;
@@ -843,7 +857,7 @@ section {
   border: none;
 }
 .site-header .site-nav .menu-button svg {
-  fill: rgb(132, 169, 140);
+  fill: white;
 }
 .site-header .site-nav .menu-button svg rect {
   border-radius: 1em;
@@ -873,8 +887,8 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
   -webkit-transition: all 350ms ease-out;
   transition: all 350ms ease-out;
   z-index: 19;
@@ -1318,6 +1332,31 @@ marquee p {
   line-height: 1.4;
 }
 
+.inspire-box {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+.inspire-box .send {
+  padding: 1.25em;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(240, 190, 90);
+}
+.inspire-box .enter {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1.25em;
+  text-align: left;
+}
+
+.social-icons {
+  display: inline-block;
+  padding: 0 2em;
+  padding-left: 0;
+}
+
 @media (min-width: 768px) {
   .footer-content {
     display: -webkit-box;
@@ -1358,22 +1397,4 @@ marquee p {
     padding: 0 2em;
     padding-left: 0;
   }
-}
-.inspire-box {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-}
-.inspire-box .send {
-  padding: 1.25em;
-  color: rgba(0, 0, 0, 0.8);
-  background-color: rgb(240, 190, 90);
-}
-.inspire-box .enter {
-  color: rgba(0, 0, 0, 0.8);
-  padding: 1.25em;
-  text-align: left;
 }

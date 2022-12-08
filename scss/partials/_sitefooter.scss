@@ -47,6 +47,31 @@
 
 // SUBSCRIBE MOTIVATE FOOTER
 
+.inspire-box {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    background-color: white;
+
+    .send {
+        padding: 1.25em;
+        color: rgba(0, 0, 0, .8);
+        background-color: $color-link-darker;
+    }
+
+    .enter {
+        color: rgba(0, 0, 0, .8);
+        padding: 1.25em;
+        text-align: left;
+    }
+}
+
+.social-icons {
+    display: inline-block;
+    padding: 0 2em;
+    padding-left: 0;
+}
+
 @media (min-width: $breakpoint-small) {
     .footer-content {
         display: flex;
@@ -89,24 +114,5 @@
                 padding-left: 0;
             }
         }
-    }
-}
-
-.inspire-box {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    background-color: white;
-
-    .send {
-        padding: 1.25em;
-        color: rgba(0, 0, 0, .8);
-        background-color: $color-link-darker;
-    }
-
-    .enter {
-        color: rgba(0, 0, 0, .8);
-        padding: 1.25em;
-        text-align: left;
     }
 }

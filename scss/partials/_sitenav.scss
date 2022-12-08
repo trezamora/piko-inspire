@@ -8,7 +8,7 @@
 
     .menu-button {
         position: absolute;
-        top: .5em;
+        top: 1em;
         right: .5em;
         color: rgba(0, 0, 0, .8);
         margin: 0;
@@ -20,7 +20,7 @@
         border: none;
 
         svg {
-            fill: rgba(132, 169, 140, 1);
+            fill: white;
 
             rect {
                 border-radius: 1em;
@@ -44,7 +44,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translate(0, 100%);
+        transform: translate(0, -100%);
         transition: all 350ms ease-out;
         z-index: 19;
     }

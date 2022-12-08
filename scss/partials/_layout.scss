@@ -19,11 +19,61 @@ body {
 }
 
 .swiper-container {
+    margin: 0 auto;
+    padding: 0 1em;
     background-image: url('../img/pikotriangles-11a.svg'), url('../img/pikotriangles-11b.svg');
     background-position: left top, bottom right;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, .8);
+
+    .swiper {
+        --swiper-theme-color: #f0be5a;
+        padding: 5em 4em;
+
+        @media (min-width: $breakpoint-small) {
+            margin: 2em;
+        }
+
+        @media (min-width: $breakpoint-medium) {
+            margin: 5em;
+        }
+
+        @media (min-width: $breakpoint-large) {
+            margin: 8em;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stories-person {
+        padding: 3em 3em;
+        position: relative;
+        border: 3px solid rgba(247, 198, 100, 1);
+        border-radius: 1em;
+        color: white;
+
+        h3 {
+            padding-top: 1em;
+            color: white;
+        }
+
+        .stories-number {
+            position: absolute;
+            font-size: 10rem;
+            opacity: .15;
+            color: white;
+            left: 200px;
+
+            @media (min-width: $breakpoint-small) {
+                left: 250px;
+            }
+        }
+    }
 }
+
 
 .together-wrapper {
     padding-top: 8em;
@@ -40,7 +90,7 @@ body {
                 margin: 1em;
 
                 h1 {
-                    color: rgba(225, 225, 225, 1);
+                    color: rgba(0, 0, 0, 1);
                 }
             }
         }
