@@ -19,6 +19,7 @@ for (let i = 0; i < mysitenavlinks.length; i++) {
     };
 };
 
+
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
 const io_options = {
     // root: document.body,

@@ -6,30 +6,6 @@
         color: rgba(255, 255, 255, .8);
     }
 
-    .menu-button {
-        position: absolute;
-        top: 1em;
-        right: .5em;
-        color: rgba(0, 0, 0, .8);
-        margin: 0;
-        font-size: 1.5rem;
-        line-height: 1;
-        z-index: 20;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-
-        svg {
-            fill: white;
-
-            rect {
-                border-radius: 1em;
-                transition: 300ms ease-out;
-            }
-        }
-
-    }
-
     ul {
         margin: 0;
         padding: 0;
@@ -57,31 +33,33 @@
         opacity: 0;
     }
 
-    #bar-top,
-    #bar-middle,
-    #bar-bottom {
-        transform-origin: center;
+    .menu-button {
+        position: absolute;
+        top: 1em;
+        right: .75em;
+        color: rgba(0, 0, 0, .8);
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1;
+        z-index: 20;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        svg {
+            fill: white;
+
+            rect {
+                border-radius: 1em;
+                transition: 300ms ease-out;
+            }
+        }
     }
 
     &[data-navstate="open"] {
 
         .menu-button {
             position: fixed;
-        }
-
-        #bar-top {
-            transform-origin: center;
-            transform: translate(7px, 7px) rotate(-45deg);
-        }
-
-        #bar-middle {
-            transform-origin: center;
-            transform: translate(-2px, -11px) rotate(137deg);
-        }
-
-        #bar-botton {
-            transform-origin: center;
-            transform: translate(0, -4px) rotate(45deg);
         }
 
         ul {
@@ -93,10 +71,9 @@
             opacity: 1;
         }
     }
-
 }
 
-/* SITE NAV */
+// /* SITE NAV */
 
 .site-nav {
     ul {
@@ -110,6 +87,116 @@
         display: inline-block;
         padding: 0 1em;
         line-height: 1;
+    }
+
+    // OPEN MENU ANIMATION
+    .menu-button svg.open-animation {
+        rect {
+            transform-origin: center;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+
+        #bar-top {
+            animation-name: top-close;
+        }
+
+        #bar-bottom {
+            animation-name: bottom-close;
+        }
+    }
+
+    &[data-navstate="open"] .menu-button svg.open-animation {
+
+        #bar-top {
+            animation-name: top-down;
+
+            @keyframes top-down {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                50% {
+                    transform: translate(0, 10px);
+                }
+
+                100% {
+                    transform: translate(-5px, 8px) rotate(45deg)
+                }
+            }
+
+            @keyframes top-close {
+                0% {
+                    transform: translate(-5px, 8px) rotate(45deg);
+                }
+
+                50% {
+                    transform: translate(0, 10px);
+                }
+
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+        }
+
+        #bar-middle {
+            opacity: 0;
+            transition: all 0s linear;
+        }
+
+        #bar-bottom {
+            animation-name: bottom-up;
+
+            @keyframes bottom-up {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                50% {
+                    transform: translate(0, -10px);
+                }
+
+                100% {
+                    transform: translate(-5px, -7px) rotate(-45deg);
+                }
+            }
+
+            @keyframes bottom-close {
+                0% {
+                    transform: translate(-5px, -7px) rotate(-45deg);
+                }
+
+                50% {
+                    transform: translate(0, -10px);
+                }
+
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
+
+    // CLOSE MENU ANIMATION
+    .menu-button svg.close-animation rect {
+        transform-origin: center;
+        transition: all 2000ms ease-out;
+    }
+
+    &[data-navstate="open"] .menu-button svg.close-animation {
+        #bar-top {
+            transform: translate(-5px, 9px) rotate(30deg);
+        }
+
+        #bar-middle {
+            transform: scale(0, 1) 2000ms;
+        }
+
+        #bar-bottom {
+            transform: translate(-5px, -9px) rotate(-30deg);
+        }
     }
 }
 
