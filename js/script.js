@@ -70,7 +70,7 @@ var animation = bodymovin.loadAnimation({
     render: 'svg',
     loop: true,
     autoplay: true,
-    path: 'js/heroanimation.json'
+    path: 'js/hero_animation.json'
 });
 
 var animation = bodymovin.loadAnimation({
