@@ -392,9 +392,6 @@ body {
   .together-wrapper .creator-images .creator {
     margin: 1em;
   }
-  .together-wrapper .creator-images .creator h1 {
-    color: rgb(0, 0, 0);
-  }
 }
 
 /* MEDIA QUERIES */
