@@ -426,6 +426,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .row > * {
   margin: 1%;
@@ -1361,11 +1362,16 @@ section.scroll-text {
 }
 
 marquee {
-  display: block;
-  background: rgb(57, 62, 65);
-  color: white;
-  padding: 2em 0;
-  overflow: hidden;
+  display: none;
+}
+@media (min-width: 768px) {
+  marquee {
+    display: block;
+    background: rgb(57, 62, 65);
+    color: white;
+    padding: 2em 0;
+    overflow: hidden;
+  }
 }
 marquee img {
   margin: 0 1em;

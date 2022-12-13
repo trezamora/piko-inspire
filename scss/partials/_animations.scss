@@ -327,11 +327,17 @@ section.scroll-text {
 }
 
 marquee {
-    display: block;
-    background: rgba(57, 62, 65, 1);
-    color: white;
-    padding: 2em 0;
-    overflow: hidden;
+
+    display: none;
+
+    @media (min-width: $breakpoint-small) {
+        display: block;
+        background: rgba(57, 62, 65, 1);
+        color: white;
+        padding: 2em 0;
+        overflow: hidden;
+    }
+
 
     img {
         margin: 0 1em;

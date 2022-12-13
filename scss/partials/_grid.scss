@@ -9,6 +9,7 @@ $gridgap: 2%;
     margin-right: -($gridgap / 2);
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     >* {
         margin: ($gridgap / 2);
