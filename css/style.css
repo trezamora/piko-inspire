@@ -367,12 +367,7 @@ body {
   font-size: 10rem;
   opacity: 0.15;
   color: white;
-  left: 200px;
-}
-@media (min-width: 768px) {
-  .swiper-container .stories-person .stories-number {
-    left: 250px;
-  }
+  left: 150px;
 }
 
 .together-wrapper {
@@ -1501,6 +1496,12 @@ marquee p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1em;
   }
   .footer-content .subscribe {

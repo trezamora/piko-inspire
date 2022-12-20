@@ -65,11 +65,11 @@ body {
             font-size: 10rem;
             opacity: .15;
             color: white;
-            left: 200px;
+            left: 150px;
 
-            @media (min-width: $breakpoint-small) {
-                left: 250px;
-            }
+            // @media (min-width: $breakpoint-small) {
+            //     left: 250px;
+            // }
         }
     }
 }

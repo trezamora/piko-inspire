@@ -75,6 +75,8 @@
 @media (min-width: $breakpoint-small) {
     .footer-content {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 1em;
 
         .subscribe {
