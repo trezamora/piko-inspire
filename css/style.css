@@ -1409,21 +1409,6 @@ marquee p {
   }
 }
 
-/* LOTTIE GIF ANIMATIONS */
-.yellow-swirl {
-  position: absolute;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  z-index: -5;
-  opacity: 0.5;
-}
-
-.yellow-swirl2 {
-  position: absolute;
-  z-index: -5;
-  opacity: 0.5;
-}
-
 /* SITE FOOTER */
 .site-footer {
   background: rgb(0, 0, 0);

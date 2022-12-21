@@ -56,11 +56,6 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // // And if we need scrollbar
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
 });
 
 // LOTTIE READER
@@ -145,6 +140,30 @@ var animation = bodymovin.loadAnimation({
     loop: true,
     autoplay: true,
     path: 'js/pikoaction.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('designer-animation'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/designer-animation.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('artist-animation'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/artist-animation.json'
+});
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('storyteller-animation'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/storyteller-animation.json'
 });
 
 //FORM BUTTON JS
