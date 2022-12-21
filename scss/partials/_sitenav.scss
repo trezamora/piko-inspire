@@ -1,7 +1,6 @@
 /* SITE-HEADER SITE-NAV */
 
 .site-header .site-nav {
-
     a {
         color: rgba(255, 255, 255, .8);
     }
@@ -31,6 +30,12 @@
         transform: translate(0, -10%);
         transition: all 300ms ease-out 500ms;
         opacity: 0;
+    }
+
+    sub {
+        vertical-align: top;
+        font-size: 1.5rem;
+        font-weight: 100;
     }
 
     .menu-button {
@@ -76,6 +81,7 @@
 // /* SITE NAV */
 
 .site-nav {
+
     ul {
         margin: 0;
         padding: 0;

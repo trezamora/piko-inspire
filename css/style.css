@@ -874,6 +874,11 @@ section {
   transition: all 300ms ease-out 500ms;
   opacity: 0;
 }
+.site-header .site-nav sub {
+  vertical-align: top;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 .site-header .site-nav .menu-button {
   position: absolute;
   top: 1em;
